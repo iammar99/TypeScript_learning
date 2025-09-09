@@ -1,5 +1,6 @@
-class"use strict";
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let num = 20;
-console.log(num);
+let person = { name: "Ammar" };
+person.age = 22;
+console.log(person);
 //# sourceMappingURL=index.js.map

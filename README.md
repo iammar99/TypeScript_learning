@@ -8,6 +8,7 @@
   - [Setting up environment ?](#setting-up-environment-)
   - [First typescript project](#first-typescript-project)
   - [Configuring typescript project](#configuring-typescript-project)
+  - [Built-in Data types](#built-in-data-types)
 
 ## What is TypeScript ?
 
@@ -56,5 +57,29 @@ You may use following command to configure typescript project
 ```
 npx tsc --init
 ```
-
 There will be tsconfig.json
+
+
+## Built-in Data types
+
+- Boolean
+    - Same as javascript
+- Number
+    - Same As javascript
+- String
+    - Same As javascript
+- Array
+    - Same As javascript
+- Any
+    - A variable with this data type can have any kind of data but this is main reason we are using typescript to make it type strict
+- Unknown
+    - It is similar to Any but it is safest way to deal when you don't know the data type
+- enum
+    - An enum (short for enumeration) is a data type that consists of a set of named values, which are typically used to represent a collection of related constants. Enums are used to define a variable that can only take one of a set of predefined values, making the code more readable and reducing errors.
+- tuple
+    - It is a limited array in which data type of every element in the array has been defined.
+- Functions
+    - It is similar to javascript
+- Objects
+    - It is similar to javascript Objects but with strict type checking
+
