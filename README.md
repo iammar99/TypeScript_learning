@@ -9,6 +9,13 @@
   - [First typescript project](#first-typescript-project)
   - [Configuring typescript project](#configuring-typescript-project)
   - [Built-in Data types](#built-in-data-types)
+  - [Type Aliases](#type-aliases)
+  - [Union Type](#union-type)
+    - [Narrowing](#narrowing)
+  - [Intersection Type](#intersection-type)
+  - [Literal Type](#literal-type)
+  - [Nullable Type](#nullable-type)
+  - [Optional Chaining](#optional-chaining)
 
 ## What is TypeScript ?
 
@@ -83,3 +90,25 @@ There will be tsconfig.json
 - Objects
     - It is similar to javascript Objects but with strict type checking
 
+## Type Aliases
+It help to avoid repeatdly defining type while creating objects. It is some thing similar to Class  
+
+## Union Type
+It helps when value can be of different type we can use "|" opertaor for it
+
+### Narrowing 
+It is a concept when we narrow down the code you may have a look at code to understand this
+
+
+## Intersection Type
+It is used to combine to types. Look code for better understanding.
+
+## Literal Type
+It is when we define specific value to a variable.
+
+## Nullable Type
+It is a concept when we create a function and take argument which should not be null it would  be give an error so we narrow it down to avoid error
+
+## Optional Chaining
+
+It uses **?.** operator to make our code efficient instead of writting if condition when we don't know the type

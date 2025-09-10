@@ -111,3 +111,107 @@
 // } = {name: "Ammar"} // Gives error cuz age is missing in initialization can work with ?
 // person.age = 22
 // console.log(person)
+
+
+// =======================| Type Aliases |=======================
+
+
+// type Employee = {
+//     readonly id: number,
+//     name: string,
+//     retire: (date: Date) => void
+// }
+
+// let employee : Employee = { 
+//     id: 1,
+//     name: "Ammar",
+//     retire: (date: Date) => {
+//         console.log(date)
+//     }
+// }
+
+// console.log(employee)
+
+
+// =======================| Union Types |=======================
+
+
+// const kgToLbs = (weight: number | string): number => {
+//     // Narrowing
+//     if (typeof weight === "number") {
+//         return weight * 2.20462
+//     } else {
+//         return parseInt(weight) * 2.20462
+//     }
+// }
+
+// console.log(kgToLbs(10))
+// console.log(kgToLbs("10kg"))
+
+
+// =======================| Intersection Types |=======================
+
+// type Draggable = {
+//     drag: () => void
+// }
+// type Resizable = {
+//     resize: () => void
+// }
+// type UIWidget = Draggable & Resizable
+
+// let textBox : UIWidget = {
+//     drag: () => {
+//         console.log("Dragging")
+//     },
+//     resize: () => {
+//         console.log("Resizing")
+//     }
+// }
+
+// console.log(textBox.drag())
+
+
+
+// =======================| Literal Types |=======================
+
+// type Quantity = 50 | 100
+// let quantity : Quantity = 100
+// console.log(quantity)
+// // quantity = 10 // Error: Type '10' is not assignable to type '50 | 100'.
+
+
+// =======================| Nullable Types |=======================
+
+// function greet(name: string | null | undefined) {
+    //     if (name) {
+//         console.log(name.toUpperCase())
+//     } else {
+    //         console.log("Hello, Guest")
+//     }
+// }
+// greet(null)
+// greet(undefined)
+// greet("Ammar")
+
+
+
+// =======================| Optional chaining |=======================
+
+// type Customer = {
+//     birthday?: Date
+// }
+
+// function getCustomer(id: number): Customer | null | undefined {
+//     return id === 0 ? null : { birthday: new Date() }
+// }
+
+// let customer = getCustomer(1)
+// // Optional property access operator
+// console.log(customer?.birthday?.getFullYear())
+
+// // Optional element access operator
+// // customers?.[0]
+
+// // Optional callback
+// let log: any = null
+// log?.("a")
